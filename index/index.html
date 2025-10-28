@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>포트폴리오 · 25세 컴퓨터공학</title>
+    <meta name="description" content="25세 컴퓨터공학 전공자의 세련된 포트폴리오" />
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="포트폴리오 · 25세 컴퓨터공학" />
+    <meta property="og:description" content="프로덕트 지향의 프론트엔드/백엔드 프로젝트 모음" />
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%230ea5e9'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='630' fill='url(%23g)'/%3E%3Ctext x='60' y='360' font-size='72' font-family='Inter,Segoe UI,Arial' fill='white'%3EPortfolio%3C/text%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script>document.documentElement.classList.remove('no-js');</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="홈으로">Portfolio</a>
+        <nav class="nav" aria-label="주요">
+          <a href="#about">소개</a>
+          <a href="#skills">기술</a>
+          <a href="#projects">프로젝트</a>
+          <a href="#contact">연락</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="다크모드 전환" title="다크모드 전환">
+          <span class="icon-sun" aria-hidden="true"></span>
+          <span class="icon-moon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero reveal">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">안녕하세요, 25세 컴퓨터공학 전공자입니다</p>
+            <h1>사용자 경험에 집중하는 개발자</h1>
+            <p class="sub">문제를 구조적으로 이해하고 제품 임팩트를 만드는 것에 관심이 많습니다.</p>
+            <div class="cta">
+              <a class="btn primary" href="#projects">프로젝트 보기</a>
+              <a class="btn ghost" href="#contact">연락하기</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="avatar" title="프로필"></div>
+            <div class="blur-blob b1"></div>
+            <div class="blur-blob b2"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="container grid-2">
+          <div>
+            <h2>소개</h2>
+            <p>
+              저는 컴퓨터공학 전공으로 자료구조와 운영체제, 네트워크, 데이터베이스를 기반으로 웹과
+              앱 개발을 주로 해왔습니다. 새 기술을 빠르게 학습하고 팀과의 협업을 통해 제품 가치를 높이는
+              데 관심이 많습니다.
+            </p>
+            <ul class="ticks">
+              <li>문제 정의와 가설 수립을 선호</li>
+              <li>디자인 시스템과 접근성 중시</li>
+              <li>성능과 DX 개선에 관심</li>
+            </ul>
+          </div>
+          <div>
+            <div class="card glass">
+              <h3>하이라이트</h3>
+              <ul class="bullets">
+                <li>반응형 SPA 레이아웃 설계 경험</li>
+                <li>프론트엔드 성능 최적화(LCP/CLS 개선)</li>
+                <li>REST/GraphQL 백엔드 연동</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="container">
+          <h2>기술</h2>
+          <div class="chips">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span>
+            <span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span>
+            <span>Python</span><span>Git</span><span>SQL</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <h2>프로젝트</h2>
+          <div class="cards">
+            <article class="card glass">
+              <h3>프로젝트 A</h3>
+              <p>사용자 피드백 기반의 기능 우선순위와 퍼널 개선을 통해 전환율 향상.</p>
+              <div class="meta"><span>React · TypeScript</span><a href="#" class="link">Repo</a></div>
+            </article>
+            <article class="card glass">
+              <h3>프로젝트 B</h3>
+              <p>Node/Express API와 캐시 전략으로 응답 지연을 낮춘 백엔드.</p>
+              <div class="meta"><span>Node · Express</span><a href="#" class="link">Demo</a></div>
+            </article>
+            <article class="card glass">
+              <h3>프로젝트 C</h3>
+              <p>반응형 디자인 시스템 구축으로 컴포넌트 재사용성과 일관성 확보.</p>
+              <div class="meta"><span>Design System</span><a href="#" class="link">Case</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="container contact">
+          <h2>연락</h2>
+          <p>협업, 채용, 사이드프로젝트 제안 환영합니다.</p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:you@example.com">이메일 보내기</a>
+            <a class="btn ghost" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com" target="_blank" rel="noreferrer noopener">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Portfolio. 모든 권리 보유.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
+
+
